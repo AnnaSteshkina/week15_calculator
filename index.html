@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first_input">
+            <h3 class="title">Введите первое число</h3>
+            <input class="input1" id="number1" placeholder="Первое число">
+        </div>
+        <div class="wrapper_buttons">
+            <button class="calc_btn" id="plus"     onclick="operator='+'">+</button>
+            <button class="calc_btn" id="minus"    onclick="operator='-'">-</button>
+            <button class="calc_btn" id="multiply" onclick="operator='*'">*</button>
+            <button class="calc_btn" id="division" onclick="operator='/'">/</button>
+        </div>
+        <div class="second_input">
+            <h3 class="title">Введите второе число</h3>
+            <input class="input2" id="number2" placeholder="Второе число">
+        </div>
+        <button class="result_btn" onclick="calculator()">Результат</button>
+        <span id="result"></span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
